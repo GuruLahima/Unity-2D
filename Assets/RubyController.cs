@@ -25,10 +25,7 @@ public class RubyController : MonoBehaviour
             Input.GetAxis(horizontalAxisName) * Time.deltaTime * speed,
             Input.GetAxis(verticalAxisName) * Time.deltaTime * speed,
             0);*/
-        Vector2 movementForce = new Vector2(
-            Input.GetAxis(horizontalAxisName) * Time.deltaTime * speed,
-            Input.GetAxis(verticalAxisName) * Time.deltaTime * speed);
-        rb.AddForce(movementForce, ForceMode2D.Impulse);
+
 
         // animation code
         // check velocity
@@ -57,5 +54,23 @@ public class RubyController : MonoBehaviour
             anim.Play("Ruby idle down");
         }
 
+        currentHorizontalInput = Input.GetAxis(horizontalAxisName);
+        currentVerticalInput = Input.GetAxis(verticalAxisName);
+
     }
+
+    float currentHorizontalInput;
+    float currentVerticalInput;
+
+    // 30 frames per second
+    void FixedUpdate()
+    {
+
+            Vector2 movementForce = new Vector2(
+            currentHorizontalInput * Time.deltaTime * speed,
+            currentVerticalInput * Time.deltaTime * speed);
+        rb.AddForce(movementForce, ForceMode2D.Impulse);
+
+    }
+
 }
