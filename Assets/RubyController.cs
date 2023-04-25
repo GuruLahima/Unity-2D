@@ -11,6 +11,32 @@ public class RubyController : MonoBehaviour
     public Animator anim;
     public Rigidbody2D rb;
 
+    private int health = 10;
+    public int Health
+    {
+        get
+        {
+            return health;
+        }
+        set
+        {
+            
+            // check to see if Ruby already has max health
+            if (health < maxHealth)
+            {
+
+                // limit Ruby's health to max health
+                if (health > maxHealth)
+                {
+                    health = maxHealth;
+                }
+
+                
+            }
+        }
+    }
+    public int maxHealth = 10;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -66,10 +92,11 @@ public class RubyController : MonoBehaviour
     void FixedUpdate()
     {
 
-            Vector2 movementForce = new Vector2(
-            currentHorizontalInput * Time.deltaTime * speed,
-            currentVerticalInput * Time.deltaTime * speed);
+        Vector2 movementForce = new Vector2(
+        currentHorizontalInput * Time.deltaTime * speed,
+        currentVerticalInput * Time.deltaTime * speed);
         rb.AddForce(movementForce, ForceMode2D.Impulse);
+        
 
     }
 
