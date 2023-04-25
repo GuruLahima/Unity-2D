@@ -12,9 +12,14 @@ public class HealthPickup : MonoBehaviour
         if (ruby)
         {
             // try to give health to Ruby
-            ruby.Health -= healthBonus;
+            int oldRubyHealth = ruby.Health;
 
-            Destroy(this.gameObject);
+            ruby.Health += healthBonus;
+
+            if(ruby.Health != oldRubyHealth)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }
