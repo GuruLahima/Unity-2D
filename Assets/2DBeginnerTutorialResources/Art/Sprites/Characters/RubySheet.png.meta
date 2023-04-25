@@ -101,6 +101,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -508,7 +532,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 256
+        y: 258
         width: 256
         height: 256
       alignment: 7
@@ -619,30 +643,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RubySheet_0: -512448256
-      RubySheet_1: -929808166
-      RubySheet_10: 1577609584
-      RubySheet_11: -1370578604
-      RubySheet_12: -1418327959
-      RubySheet_13: 1439124946
-      RubySheet_14: -489729982
-      RubySheet_15: -986887999
-      RubySheet_16: -1411113624
-      RubySheet_17: 1376398050
-      RubySheet_18: 2055008199
-      RubySheet_19: 686474081
-      RubySheet_2: 1570196972
-      RubySheet_20: 1998940100
-      RubySheet_21: 1556157816
-      RubySheet_22: -808808520
-      RubySheet_23: -756300906
-      RubySheet_3: 1964791729
-      RubySheet_4: 1350504330
-      RubySheet_5: 770477834
-      RubySheet_6: 1872733144
-      RubySheet_7: -295956847
       RubySheet_8: 1147518550
+      RubySheet_5: 770477834
+      RubySheet_17: 1376398050
+      RubySheet_13: 1439124946
+      RubySheet_18: 2055008199
+      RubySheet_12: -1418327959
+      RubySheet_21: 1556157816
+      RubySheet_6: 1872733144
+      RubySheet_2: 1570196972
+      RubySheet_15: -986887999
+      RubySheet_20: 1998940100
+      RubySheet_22: -808808520
+      RubySheet_11: -1370578604
+      RubySheet_10: 1577609584
+      RubySheet_16: -1411113624
+      RubySheet_0: -512448256
+      RubySheet_23: -756300906
+      RubySheet_7: -295956847
+      RubySheet_3: 1964791729
+      RubySheet_1: -929808166
+      RubySheet_19: 686474081
+      RubySheet_4: 1350504330
       RubySheet_9: 1515826334
+      RubySheet_14: -489729982
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
