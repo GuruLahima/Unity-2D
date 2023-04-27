@@ -52,7 +52,7 @@ public class EnemyController : MonoBehaviour
 
         if (player != null)
         {
-            player.ChangeHealth(-1);
+            // player.ChangeHealth(-1);
         }
     }
 }
