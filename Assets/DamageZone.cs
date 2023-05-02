@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class DamageZone : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public int damage;
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("We were stepped on by: " + collision.name);
-        
+
+        RubyController ruby = collision.GetComponent<RubyController>();
+        if (ruby)
+        {
+
+            ruby.Health -= damage;
+
+        }
     }
 }

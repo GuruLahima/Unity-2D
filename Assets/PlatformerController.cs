@@ -22,6 +22,7 @@ public class PlatformerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+
     // Update is called once per frame
     void Update()
     {
@@ -34,11 +35,13 @@ public class PlatformerController : MonoBehaviour
         // jump code
         if (Input.GetButtonDown(jumpAxisName))
         {
-            Vector2 jumpForce = new Vector2(
-                    0,
-                    jumpSpeed);
-            rb.AddForce(jumpForce, ForceMode2D.Impulse);
+            /*            Vector2 jumpForce = new Vector2(
+                                0,
+                                jumpSpeed);
+                        rb.AddForce(jumpForce, ForceMode2D.Impulse);*/
+            rb.gravityScale = -rb.gravityScale;
         }
+
 
         // animation code
         if (Input.GetAxis(horizontalAxisName) > 0)

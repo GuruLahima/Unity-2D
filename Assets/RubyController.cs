@@ -7,11 +7,16 @@ public class RubyController : MonoBehaviour
     public string horizontalAxisName;
     public string verticalAxisName;
     public float speed;
+    public float timeBeingInvincible;
 
     public Animator anim;
     public Rigidbody2D rb;
 
-    private int health = 10;
+    [SerializeField] private int health = 10;
+
+    private bool isInvincible;
+    private float invincibilityTimer;
+
     public int Health
     {
         get
@@ -20,27 +25,54 @@ public class RubyController : MonoBehaviour
         }
         set
         {
-            
-            // check to see if Ruby already has max health
-            if (health < maxHealth)
-            {
+            // if we took damage, stop taking damage for a certain amount of time
+            int oldHealth = health;
 
-                // limit Ruby's health to max health
-                if (health > maxHealth)
+
+
+            if (oldHealth > value)
+            {
+                // taking damage
+
+                if (!isInvincible)
                 {
-                    health = maxHealth;
+                    // one way of limiting health
+                    health = Mathf.Clamp(value, 0, maxHealth);
                 }
 
-                
+                // we took some damage
+                isInvincible = true;
             }
+            else
+            {
+                // gaining health
+                health = Mathf.Clamp(value, 0, maxHealth);
+            }
+
+            // if ruby reaches 0 or bellow 0 hitpoints, she should die
+            if (health <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+
+            // second way of limiting max health
+/*            if (health > maxHealth)
+            {
+                health = maxHealth;
+            }  */              
+           
         }
     }
+
     public int maxHealth = 10;
 
     private void Start()
     {
+
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        invincibilityTimer = timeBeingInvincible;
     }
 
     // Update is called once per frame
@@ -82,6 +114,18 @@ public class RubyController : MonoBehaviour
 
         currentHorizontalInput = Input.GetAxis(horizontalAxisName);
         currentVerticalInput = Input.GetAxis(verticalAxisName);
+
+        // temporary invincibility code
+        if (isInvincible)
+        {
+            invincibilityTimer -= Time.deltaTime;
+
+            if(invincibilityTimer <= 0)
+            {
+                isInvincible = false;
+                invincibilityTimer = timeBeingInvincible;
+            }
+        }
 
     }
 
