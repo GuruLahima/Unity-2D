@@ -101,6 +101,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1564,75 +1588,75 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      min_0: -1413620799
-      min_1: 915187177
-      min_10: -2125994776
+      min_30: 1304691737
+      min_54: -272382211
+      min_7: 385126303
+      min_22: -1678815502
+      min_21: -852306977
+      min_59: 1246985722
+      min_26: -629019304
+      min_24: 1468608123
       min_11: 1856331246
+      min_3: -656211709
+      min_5: -1740791990
       min_12: -1123976236
-      min_13: -1233178716
-      min_14: -1462418418
-      min_15: 2000588934
+      min_2: 1213759554
+      min_9: -2018529035
+      min_56: -722245850
+      min_34: -1018949170
+      min_37: 1096815284
+      min_57: 1576956368
+      min_67: -345173196
+      min_48: -814831751
+      min_58: -300415715
+      min_31: -750969176
       min_16: -902083228
+      min_43: 446419953
+      min_60: 948903377
+      min_53: 1945506646
+      min_35: 1566560162
+      min_1: 915187177
+      min_40: -1084049381
+      min_33: -2105008113
+      min_6: 1771193871
+      min_41: -1462662453
+      min_27: 1466565776
+      min_10: -2125994776
+      min_25: 1767003350
+      min_32: -340691850
+      min_29: 1191061348
+      min_49: 515806642
+      min_47: -226588247
+      min_55: -1742999800
+      min_65: 723355312
+      min_44: -1794771083
+      min_4: -577788388
+      min_45: 1941517482
+      min_64: 1204285780
+      min_52: -148348972
+      min_66: -1900835260
+      min_36: 1814804363
+      min_39: -1566091446
+      min_8: 993158796
+      min_0: -1413620799
+      min_61: -1564740545
+      min_38: -897304620
       min_17: 1339971688
+      min_50: -561062895
       min_18: -240597441
       min_19: 1404854122
-      min_2: 1213759554
-      min_20: 821385061
-      min_21: -852306977
-      min_22: -1678815502
-      min_23: 218918034
-      min_24: 1468608123
-      min_25: 1767003350
-      min_26: -629019304
-      min_27: 1466565776
-      min_28: -2072025267
-      min_29: 1191061348
-      min_3: -656211709
-      min_30: 1304691737
-      min_31: -750969176
-      min_32: -340691850
-      min_33: -2105008113
-      min_34: -1018949170
-      min_35: 1566560162
-      min_36: 1814804363
-      min_37: 1096815284
-      min_38: -897304620
-      min_39: -1566091446
-      min_4: -577788388
-      min_40: -1084049381
-      min_41: -1462662453
+      min_13: -1233178716
       min_42: -742657853
-      min_43: 446419953
-      min_44: -1794771083
-      min_45: 1941517482
+      min_23: 218918034
+      min_20: 821385061
       min_46: 2061070098
-      min_47: -226588247
-      min_48: -814831751
-      min_49: 515806642
-      min_5: -1740791990
-      min_50: -561062895
       min_51: -470532447
-      min_52: -148348972
-      min_53: 1945506646
-      min_54: -272382211
-      min_55: -1742999800
-      min_56: -722245850
-      min_57: 1576956368
-      min_58: -300415715
-      min_59: 1246985722
-      min_6: 1771193871
-      min_60: 948903377
-      min_61: -1564740545
+      min_28: -2072025267
       min_62: 1805678253
-      min_63: -2043141342
-      min_64: 1204285780
-      min_65: 723355312
-      min_66: -1900835260
-      min_67: -345173196
+      min_15: 2000588934
+      min_14: -1462418418
       min_68: -995315533
-      min_7: 385126303
-      min_8: 993158796
-      min_9: -2018529035
+      min_63: -2043141342
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

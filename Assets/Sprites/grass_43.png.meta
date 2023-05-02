@@ -101,6 +101,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -556,27 +580,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      grass_43_14: 992932051
+      grass_43_6: 1054152176
+      grass_43_16: -522246551
+      grass_43_8: -749721040
+      grass_43_17: -1201414347
+      grass_43_13: -938867121
+      grass_43_11: 1993708891
+      grass_43_3: 740777800
+      grass_43_9: 704595923
+      grass_43_4: 1200789470
+      grass_43_7: 1959508354
       grass_43_0: -188533615
       grass_43_1: -890861242
       grass_43_10: 2112360005
-      grass_43_11: 1993708891
-      grass_43_12: 2091319931
-      grass_43_13: -938867121
-      grass_43_14: 992932051
+      grass_43_5: -790984365
       grass_43_15: 1655774591
-      grass_43_16: -522246551
-      grass_43_17: -1201414347
       grass_43_18: -1839013602
       grass_43_19: -2145713959
       grass_43_2: -1375203496
       grass_43_20: 322116697
-      grass_43_3: 740777800
-      grass_43_4: 1200789470
-      grass_43_5: -790984365
-      grass_43_6: 1054152176
-      grass_43_7: 1959508354
-      grass_43_8: -749721040
-      grass_43_9: 704595923
+      grass_43_12: 2091319931
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

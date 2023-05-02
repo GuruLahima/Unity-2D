@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -91,6 +91,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -535,26 +559,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MrClockworkSheet_0: -680181187
-      MrClockworkSheet_1: -1407285049
+      MrClockworkSheet_19: 203454363
+      MrClockworkSheet_17: 928017686
+      MrClockworkSheet_12: -388367733
+      MrClockworkSheet_7: -1415010687
+      MrClockworkSheet_9: -2054969915
+      MrClockworkSheet_3: -412804699
+      MrClockworkSheet_18: 6598005
+      MrClockworkSheet_8: -580112970
+      MrClockworkSheet_14: 38823056
+      MrClockworkSheet_5: -920146222
+      MrClockworkSheet_15: -381084384
       MrClockworkSheet_10: 1089010534
       MrClockworkSheet_11: -4698717
-      MrClockworkSheet_12: -388367733
       MrClockworkSheet_13: 1902168131
-      MrClockworkSheet_14: 38823056
-      MrClockworkSheet_15: -381084384
-      MrClockworkSheet_16: -914297234
-      MrClockworkSheet_17: 928017686
-      MrClockworkSheet_18: 6598005
-      MrClockworkSheet_19: 203454363
-      MrClockworkSheet_2: -1599793949
-      MrClockworkSheet_3: -412804699
       MrClockworkSheet_4: 127405394
-      MrClockworkSheet_5: -920146222
+      MrClockworkSheet_1: -1407285049
+      MrClockworkSheet_16: -914297234
+      MrClockworkSheet_2: -1599793949
       MrClockworkSheet_6: 1910620371
-      MrClockworkSheet_7: -1415010687
-      MrClockworkSheet_8: -580112970
-      MrClockworkSheet_9: -2054969915
+      MrClockworkSheet_0: -680181187
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
