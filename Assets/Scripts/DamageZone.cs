@@ -8,7 +8,7 @@ public class DamageZone : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("We were stepped on by: " + collision.name);
+        // Debug.Log("We were stepped on by: " + collision.name);
 
         RubyController ruby = collision.GetComponent<RubyController>();
         if (ruby)
