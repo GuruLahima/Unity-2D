@@ -2129,23 +2129,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1620737400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6229738011131230647, guid: 739a7257de519d74ca274b92d5dc6e70, type: 3}
-  m_PrefabInstance: {fileID: 6229738009542359240}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1620737407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620737400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 924639ee2019ee947baed0a8825c36ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2017373623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2325,6 +2308,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6229738011131230536, guid: 739a7257de519d74ca274b92d5dc6e70, type: 3}
+      propertyPath: speed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229738011131230536, guid: 739a7257de519d74ca274b92d5dc6e70, type: 3}
+      propertyPath: jumpSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229738011131230538, guid: 739a7257de519d74ca274b92d5dc6e70, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229738011131230538, guid: 739a7257de519d74ca274b92d5dc6e70, type: 3}
+      propertyPath: m_LinearDrag
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6229738011131230541, guid: 739a7257de519d74ca274b92d5dc6e70, type: 3}
       propertyPath: m_RootOrder
       value: 1
