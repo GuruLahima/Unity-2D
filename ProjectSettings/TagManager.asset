@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Left Gravity Collider
+  - Right Gravity Collider
+  - Top Gravity Collider
+  - Down Gravity Collider
   layers:
   - Default
   - TransparentFX
