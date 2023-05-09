@@ -30,7 +30,7 @@ public class PlatformerController : MonoBehaviour
     Vector2 movementForce = new Vector2(
         Input.GetAxis(horizontalAxisName) * Time.deltaTime * speed,
         0);
-    rb.AddForce(movementForce, ForceMode2D.Impulse);
+    rb.AddRelativeForce(movementForce, ForceMode2D.Impulse);
 
     // jump code
     if (Input.GetButtonDown(jumpAxisName))
@@ -39,7 +39,7 @@ public class PlatformerController : MonoBehaviour
       Vector2 jumpForce = new Vector2(
                           0,
                           jumpSpeed);
-      rb.AddForce(jumpForce, ForceMode2D.Impulse);
+      rb.AddRelativeForce(jumpForce, ForceMode2D.Impulse);
 
       // change gravity code
       // rb.gravityScale = -rb.gravityScale;
