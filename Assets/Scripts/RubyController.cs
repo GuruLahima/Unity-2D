@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RubyController : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class RubyController : MonoBehaviour
     public string verticalAxisName;
     public float speed;
     public float timeBeingInvincible;
+    // referenc to health bar image
+    public Image healthBarUI;
 
     public Animator anim;
     public Rigidbody2D rb;
@@ -55,12 +58,23 @@ public class RubyController : MonoBehaviour
                 Destroy(this.gameObject);
             }
 
-            // second way of limiting max health
-/*            if (health > maxHealth)
+            // visual feedback
+            if (maxHealth == 0)
             {
-                health = maxHealth;
-            }  */              
-           
+                healthBarUI.fillAmount = 0;
+            }
+            else
+            {
+                if (healthBarUI != null)
+                    healthBarUI.fillAmount = (float)health / (float)maxHealth;
+            }
+
+            // second way of limiting max health
+            /*            if (health > maxHealth)
+                        {
+                            health = maxHealth;
+                        }  */
+
         }
     }
 
@@ -73,6 +87,18 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         invincibilityTimer = timeBeingInvincible;
+
+        // visual feedback
+        if(maxHealth == 0)
+        {
+            healthBarUI.fillAmount = 0;
+        }
+        else
+        {
+            if (healthBarUI != null)
+                healthBarUI.fillAmount = (float)health / (float)maxHealth;
+        }
+        
     }
 
     // Update is called once per frame
