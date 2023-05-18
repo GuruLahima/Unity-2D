@@ -39,14 +39,22 @@ public class PauseMenu : MonoBehaviour
 
   public void ToggleFullscreen(bool isFullscreen)
   {
-    // Toggle fullscreen
-    Screen.fullScreen = isFullscreen;
 
-    EditorWindow window = EditorWindow.focusedWindow;
-    // Assume the game view is focused.
-    window.maximized = isFullscreen;
+#if UNITY_EDITOR
 
-    
-  }
+        EditorWindow window = EditorWindow.focusedWindow;
+        // Assume the game view is focused.
+        window.maximized = isFullscreen;
+#else
+        // Toggle fullscreen
+        Screen.fullScreen = isFullscreen;
+#endif
+
+   }
+
+    public void PrintInt(int value)
+    {
+        Debug.Log(value);
+    }
 
 }
