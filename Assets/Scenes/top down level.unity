@@ -210,22 +210,10 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.977
+  m_Value: 0.902
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2098120843}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: set_volume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &63044624
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +883,19 @@ MonoBehaviour:
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 988406813}
+        m_TargetAssemblyTypeName: UnityEngine.UI.CanvasScaler, UnityEngine.UI
+        m_MethodName: set_scaleFactor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &442183125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13825,7 +13825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00008229295}
+  m_AnchoredPosition: {x: 0, y: 0.005344639}
   m_SizeDelta: {x: 0, y: 462.42}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &955358816
@@ -17482,7 +17482,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1003628715}
   m_HandleRect: {fileID: 1003628714}
   m_Direction: 2
-  m_Value: 0.9875776
+  m_Value: -0.08074534
   m_Size: 0.9999894
   m_NumberOfSteps: 0
   m_OnValueChanged:
