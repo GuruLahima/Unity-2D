@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
@@ -10,11 +11,41 @@ public class EnemyController : MonoBehaviour
   float timer;
   int direction = 1;
 
+    public Image healthBar;
+
+    int health;
+    public int maxHealth;
+
+    public int Health
+    {
+        get { return health; }
+        set
+        {
+            health = value;
+            healthBar.fillAmount = (float)health / (float)maxHealth;
+
+            // code for destroying when zero health
+            if (health <= 0)
+            {
+                // vfx
+                // sfx
+                // particle
+                // camera effect
+
+                // destroy enemy
+                Destroy(this.gameObject);
+            }
+
+        }
+    }
+
   // Start is called before the first frame update
   void Start()
   {
     rigidbody2D = GetComponent<Rigidbody2D>();
     timer = changeTime;
+
+    Health = maxHealth;
   }
 
   void Update()

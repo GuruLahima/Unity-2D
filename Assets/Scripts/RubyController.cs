@@ -15,6 +15,10 @@ public class RubyController : MonoBehaviour
     public Animator anim;
     public Rigidbody2D rb;
 
+    public GameObject projectilePrefab;
+    public Vector3 projectileOffset;
+    public float projectileSpeed;
+
     [SerializeField] private int health = 10;
 
     private bool isInvincible;
@@ -151,6 +155,15 @@ public class RubyController : MonoBehaviour
                 isInvincible = false;
                 invincibilityTimer = timeBeingInvincible;
             }
+        }
+
+        // shooting projectiles code
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject newProjectile = Instantiate(projectilePrefab, this.transform.position + projectileOffset, Quaternion.identity);
+            
+            newProjectile.GetComponent<Projectile>().LaunchProjectile(this.rb.velocity.normalized, projectileSpeed);
+
         }
 
     }

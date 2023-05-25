@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 19247450335481198}
   - component: {fileID: 19247450335481192}
   - component: {fileID: 19247450335481193}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ruby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,9 +123,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalAxisName: Horizontal
   verticalAxisName: Vertical
-  speed: 10
+  speed: 12
+  timeBeingInvincible: 1
+  healthBarUI: {fileID: 0}
   anim: {fileID: 0}
   rb: {fileID: 0}
+  projectilePrefab: {fileID: 8659040012669013173, guid: a4e15cd328a823e47ac316fc1647466b, type: 3}
+  projectileOffset: {x: 0, y: 0.5, z: 0}
+  projectileSpeed: 8
+  health: 2
+  maxHealth: 10
 --- !u!70 &19247450335481192
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -155,11 +162,11 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
